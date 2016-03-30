@@ -1,10 +1,13 @@
 Package: voterTransition
-Title: What the Package Does (one line, title case)
+Title: Tries to find a plausible voter transition matrix based on aggregate
+    voting data
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Christoph", "Schwerdtfeger", email = "christoph.schwerdtfeger@gmail.com", role = c("aut", "cre"))
+Description: Uses gradient descent to minimize the Euclidean distance between
+    the modeled outcome of the second election and the actual outcome of the second
+    election.
 Depends:
     R (>= 3.1.2)
-License: What license is it under?
+License: GGPL 3
 LazyData: true
 RoxygenNote: 5.0.1
