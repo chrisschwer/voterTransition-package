@@ -8,9 +8,9 @@
 #' @param clusterids vector of clusterIDs in range 1:k, where k ist the number of clusters
 #' @export
 
-optimTransitionCluster <- function (Old, New, Transition,
+optimTransitionCluster <- function (Old, New, Transition = NA,
                                           iterations = 1000,
-                                          epsilon = 0.0000001, alpha = 0.000000000001,
+                                          epsilon = 0.0000001, alpha = NA,
                                           documentation = FALSE,
                                           clusterids) {
   

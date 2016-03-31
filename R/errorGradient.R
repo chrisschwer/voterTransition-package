@@ -1,7 +1,10 @@
 #' errorGradient
 #' 
 #' This helper function calculates the partial gradient numerically for each element of Transition
-#' @inheritParams errorCalculation
+#' @param Old m by n matrix of values for n choices in m districts
+#' @param New m by p matrix of values for n choices in m districts
+#' @param Transition n by b matrix of transition values, all should be positive,
+#'   row sums should be one
 #' @param n the number of outcomes in Old and the number of rows in Transition, provided for performance reasons
 #' @param p the number of outcomes in New and the number of rows in Transition, provided for performance reasons
 #' @param epsilon \eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001 

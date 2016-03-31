@@ -4,8 +4,8 @@
 \alias{optimTransitionCluster}
 \title{optimTransitionCluster}
 \usage{
-optimTransitionCluster(Old, New, Transition, iterations = 1000,
-  epsilon = 1e-07, alpha = 1e-12, documentation = FALSE, clusterids)
+optimTransitionCluster(Old, New, Transition = NA, iterations = 1000,
+  epsilon = 1e-07, alpha = NA, documentation = FALSE, clusterids)
 }
 \arguments{
 \item{Old}{m by n matrix of values for n choices in m districts}

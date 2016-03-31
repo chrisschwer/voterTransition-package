@@ -4,8 +4,8 @@
 \alias{optimTransition}
 \title{optimTransition}
 \usage{
-optimTransition(Old, New, Transition, iterations = 1000, epsilon = 1e-07,
-  alpha = 1e-12, documentation = FALSE)
+optimTransition(Old, New, Transition = NA, iterations = 1000,
+  epsilon = 1e-07, alpha = NA, documentation = FALSE)
 }
 \arguments{
 \item{Old}{m by n matrix of values for n choices in m districts}
@@ -13,13 +13,13 @@ optimTransition(Old, New, Transition, iterations = 1000, epsilon = 1e-07,
 \item{New}{m by p matrix of values for n choices in m districts}
 
 \item{Transition}{n by b matrix of transition values, all should be positive,
-row sums should be one}
+row sums should be one, defaults to a matrix of equal values}
 
 \item{iterations}{number of iterations, defaults to 1000}
 
 \item{epsilon}{\eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001}
 
-\item{alpha}{step size \eqn{\alpha}, defaults to 0.000000000001}
+\item{alpha}{step size \eqn{\alpha}, defaults to .01 / initial error}
 
 \item{documentation}{boolean indicating whether long results (including
 parameters of function call) shall be returned. Defaults to FALSE}
