@@ -45,8 +45,8 @@ optimTransitionCluster <- function (Old, New, Transition,
   }
   if (documentation) {
     return (list (Total = gesamt, Transition = relativ,
-                  Errors = fehler, Old = ergebnisAlt, 
-                  New = ergebnisNeu, InitialTransition = wanderung_initial,
+                  Errors = fehler, Old = Old, 
+                  New = New, InitialTransition = wanderung_initial,
                   Epsilon = epsilon, Alpha = alpha, ClusterIDs = clusterids
                   ))
   } else {
