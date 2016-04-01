@@ -1,7 +1,7 @@
 Package: voterTransition
 Title: Tries to find a plausible voter transition matrix based on aggregate
     voting data
-Version: 0.0.0.9100
+Version: 0.1.0
 Authors@R: person("Christoph", "Schwerdtfeger", email = "christoph.schwerdtfeger@gmail.com", role = c("aut", "cre"))
 Description: Uses gradient descent to minimize the Euclidean distance between
     the modeled outcome of the second election and the actual outcome of the second

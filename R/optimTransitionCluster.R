@@ -3,9 +3,12 @@
 #' Splits the data set according to clusterids and calculates Transition matrices for each cluster individually
 #' @inheritParams errorCalculation
 #' @inheritParams errorGradient
-#' @inheritParams updateMatrix
-#' @inheritParams optimTransition
-#' @param clusterids vector of clusterIDs in range 1:k, where k ist the number of clusters
+#' @param Old m by n matrix of values for n choices in m districts
+#' @param New m by p matrix of values for n choices in m districts
+#' @param Transition n by b matrix of transition values, all should be positive,
+#'   row sums should be one
+#' @param alpha step size \eqn{\alpha}, defaults to .01 / initial error
+#' @seealso \code{\link{optimTransition}}
 #' @export
 
 optimTransitionCluster <- function (Old, New, Transition = NA,

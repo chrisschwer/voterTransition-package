@@ -17,7 +17,7 @@ row sums should be one, defaults to a matrix of equal values}
 
 \item{iterations}{number of iterations, defaults to 1000}
 
-\item{epsilon}{\eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001}
+\item{epsilon}{'\eqn{\epsilon}'-value for numerical approximation of gradient, defaults to 0.0000001}
 
 \item{alpha}{step size \eqn{\alpha}, defaults to .01 / initial error}
 
@@ -27,5 +27,15 @@ parameters of function call) shall be returned. Defaults to FALSE}
 \description{
 Core function of the package, uses gradient descent to find optimal
 Transition matrix
+}
+\examples{
+ data(LTW_2011)
+ data(LTW_2016)
+ result <- optimTransition (LTW_2011, LTW_2016)
+ plot (result$Errors)
+ View (result$Transition)
+}
+\seealso{
+\code{\link{optimTransitionCluster}} for analysis by clusters
 }
 

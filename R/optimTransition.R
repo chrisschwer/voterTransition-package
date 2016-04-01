@@ -11,6 +11,13 @@
 #' @param iterations number of iterations, defaults to 1000
 #' @param documentation boolean indicating whether long results (including
 #'   parameters of function call) shall be returned. Defaults to FALSE
+#' @examples
+#'  data(LTW_2011)
+#'  data(LTW_2016)
+#'  result <- optimTransition (LTW_2011, LTW_2016)
+#'  plot (result$Errors)
+#'  View (result$Transition)
+#' @seealso \code{\link{optimTransitionCluster}} for analysis by clusters
 #' @export   
 
 optimTransition <- function (Old, New, Transition = NA,

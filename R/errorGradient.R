@@ -7,7 +7,7 @@
 #'   row sums should be one
 #' @param n the number of outcomes in Old and the number of rows in Transition, provided for performance reasons
 #' @param p the number of outcomes in New and the number of rows in Transition, provided for performance reasons
-#' @param epsilon \eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001 
+#' @param epsilon '\eqn{\epsilon}'-value for numerical approximation of gradient, defaults to 0.0000001 
 #' @export
 
 errorGradient <- function (Old, New, Transition,

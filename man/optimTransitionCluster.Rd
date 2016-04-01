@@ -15,18 +15,14 @@ optimTransitionCluster(Old, New, Transition = NA, iterations = 1000,
 \item{Transition}{n by b matrix of transition values, all should be positive,
 row sums should be one}
 
-\item{iterations}{number of iterations, defaults to 1000}
+\item{epsilon}{'\eqn{\epsilon}'-value for numerical approximation of gradient, defaults to 0.0000001}
 
-\item{epsilon}{\eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001}
-
-\item{alpha}{step size \eqn{\alpha}, defaults to 0.000000000001}
-
-\item{documentation}{boolean indicating whether long results (including
-parameters of function call) shall be returned. Defaults to FALSE}
-
-\item{clusterids}{vector of clusterIDs in range 1:k, where k ist the number of clusters}
+\item{alpha}{step size \eqn{\alpha}, defaults to .01 / initial error}
 }
 \description{
 Splits the data set according to clusterids and calculates Transition matrices for each cluster individually
+}
+\seealso{
+\code{\link{optimTransition}}
 }
 

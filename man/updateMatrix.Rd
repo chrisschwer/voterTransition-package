@@ -18,7 +18,7 @@ row sums should be one}
 
 \item{p}{the number of outcomes in New and the number of rows in Transition, provided for performance reasons}
 
-\item{epsilon}{\eqn{\epsilon}-value for numerical approximation of gradient, defaults to 0.0000001}
+\item{epsilon}{'\eqn{\epsilon}'-value for numerical approximation of gradient, defaults to 0.0000001}
 
 \item{alpha}{step size \eqn{\alpha}, defaults to 0.000000000001}
 }
